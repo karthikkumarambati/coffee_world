@@ -1,152 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Bar</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/f707bee2c9.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17110e">
+  <meta name="description" content="Discover handcrafted coffee, fresh pastries, and cozy moments at Ember & Oak Coffee Bar.">
+  <title>Ember & Oak | Coffee Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="Home">
-        <div id="home"> 
-            <div class="img1">
-              <img src="https://user-images.githubusercontent.com/98634205/169639003-ac4efb26-7c05-4f73-82a1-f4c782580f80.png" width="80px" height="70px">
-            </div>
-            <div class="nav">
-              <img class="img2" src="https://user-images.githubusercontent.com/98634205/173232769-133bda82-b915-44f6-b879-cccdb101ed59.jpg" width="100%" height="40%">
-               <div id="droping">
-                   <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#Menu">MENU</a></li>
-                    <li><a href="#products">PRDUCTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-               </div>  
-                  <label class="btn1" for="btn2"><i class="fa-solid fa-magnifying-glass"></i></label>
-                   <input id="btn2" type="text" placeholder="search" name="search">
-           </div>
-           <div class="Make">
-            <label  class="care" onclick="myFunction()">
-                <i class="fas fa-bars"></i>
-            </label> 
-               <a  class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-               <div class="text">
-                   <h2>TODAY GOOD MOOD <br><span id="txt">IS</span><br>SPONSORED BY COFFEE</h2>
-                    <h5>"Life without coffee is like something without something <br>...Sorry,I haven't had any coffee yet"..</h5>
-                    <button>Get Yours</button>
-                </div>
-        </div>
-        <div id="about">
-            <div class="About">
-            <h2>ABOUT<span>US</span></h2>
-            </div>
-             <div class="about_us">
-                 <img src="https://user-images.githubusercontent.com/98634205/169638914-f461b225-4aba-4de7-b5f7-f64244d07336.jpg" height="330px" width="450px">
-                 <div class="txt1">
-                 <h3>What Makes Our Coffee Special?</h3>
-                 <h4>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptatibus Qui Ea Ullam, Enim Tempora Ipsum Fuga Alias Quae Ratione A Officiis Id Temporibus Autem? Quod Nemo Facilis Cupiditate. Ex, Vel?
-
-                    Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Odit Amet Enim Quod Veritatis, Nihil Voluptas Culpa! Neque Consectetur Obcaecati Sapiente?</h4>
-                    <button class="btn2">Learn More</button>
-                 </div>
-                </div> 
-        </div>
-        <div id="Menu">
-            <div class="menu_bars">
-                <h2><span>OUR</span>MENU</h2>
-            </div>
-            <div class="Menu_Bars1">
-               <img class="hover_menu1" src="https://user-images.githubusercontent.com/98634205/173266968-0a68afd0-433e-46c7-8cf4-18bc79a0d3de.jpg" height="330px" width="330px">
-            </div>
-            <div  class="Menu_Bars2">
-              <img class="hover_menu2" src="https://user-images.githubusercontent.com/98634205/173267206-8bdc1199-46e7-4b9a-b01d-57b10680b636.jpg" height="330px" width="330px">
-            </div>
-            <div class="Menu_Bars3">
-               <img class="hover_menu3" src="https://user-images.githubusercontent.com/98634205/173267434-3723167b-bc3f-426f-b004-d63b5d2cbefe.jpg" height="330px" width="330px">
-            </div>
-        </div>
-        <div id="products">
-            <div class="products_imgs">
-                <h2>OUR<span>PRODUCTS</span></h2>
-            </div>
-            <div class="slidings">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img id="pr1" src="https://user-images.githubusercontent.com/98634205/173267707-6028d4c2-659e-4c11-ba18-832dacfed0b9.jpg" class="d-block w-100" alt="..." height="400px" width="50px">
-                  </div>
-                  <div class="carousel-item">
-                    <img id="pr2" src="https://user-images.githubusercontent.com/98634205/173268190-28f9c38b-84a1-47d8-ba84-bc973390a9f0.jpg" class="d-block w-100" alt="..." height="400px" width="100px">
-                  </div>
-                  <div class="carousel-item">
-                    <img id="pr3" src="https://user-images.githubusercontent.com/98634205/173268417-1f00c303-cbb2-4a6f-812a-db3e0ec4f493.jpg" class="d-block w-100" alt="..." height="400px" width="55px">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-        </div>
-        <div id="contact">
-            <div class="our_contact">
-                <h2><span>CONTACT</span>US</h2> 
-            </div>
-            <img id="bg1" src="https://user-images.githubusercontent.com/98634205/173267856-bde80af0-bab3-48e9-ba9a-cfcddfee8fb2.jpg" height="600px" width="800px">
-            <div class="con_shadow">
-                <form class="form_slot" action="login.php" method="post">
-                    <h2 class="slot">Get in Touch</h2>
-                    <input id="in_1" type="text" placeholder="Enter Your Name"><br>
-                    <div class="ion1">
-                    <i class="fa-solid fa-user"></i>
-                    </div>
-                    <br><br>
-                    <input id="in_2" type="text" placeholder="Enter Your Email"><br>
-                    <div class="ion2">
-                    <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <br><br>
-                    <input id="in_3" type="number" placeholder="Enter Your Mobile Number"><br>
-                    <div class="ion3">
-                    <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <br><br>
-                    <input id="in_4" type="submit">
-                    <div id="nav">
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-telegram"></i> </a></li>
-                        </ul>
-                    </div>
-                </form>
-            </div>
-        </div>
+  <div class="topbar"><div class="container"><span><i class="fa-regular fa-clock"></i> Daily 7:00 AM – 9:00 PM</span><span class="topbar-right"><i class="fa-solid fa-location-dot"></i> Your neighborhood coffee spot</span></div></div>
+  <header id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Ember and Oak home"><span class="brand-mark"><i class="fa-solid fa-mug-hot"></i></span><span class="brand-name">EMBER & OAK<small>COFFEE BAR</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="#home">Home</a></li><li><a href="#about">Our Story</a></li><li><a href="#menu">Menu</a></li><li><a href="#products">Coffee Goods</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions"><a class="btn" href="#menu">Explore Menu <i class="fa-solid fa-arrow-right"></i></a></div>
     </div>
-        <script>
-        function myFunction(){
-    if(document.getElementById("droping").style.display == "none"){
-        document.getElementById("droping").style.display = "block"
-    }
-    else{
-        document.getElementById("droping").style.display = "none"
-    }
-}
-    </script>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container"><div class="hero-content">
+        <span class="eyebrow">Small batches. Big comfort.</span>
+        <h1>Your daily dose<br>of <em>good coffee.</em></h1>
+        <p>Thoughtfully sourced beans, carefully crafted cups, and a cozy corner that makes every day feel a little warmer.</p>
+        <div class="hero-actions"><a class="btn" href="#menu">Discover the Menu <i class="fa-solid fa-arrow-right"></i></a><a class="btn btn-outline" href="#about"><i class="fa-regular fa-circle-play"></i> Our Story</a></div>
+        <div class="hero-meta"><div><strong>100%</strong>Freshly brewed</div><span class="divider"></span><div><strong>Small batch</strong>Roasted with care</div><span class="divider"></span><div><strong>Every day</strong>Made for you</div></div>
+      </div></div>
+      <div class="hero-badge"><div><i class="fa-solid fa-seedling"></i><br><span>Good beans<br>Good days</span></div></div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span><i class="fa-solid fa-star"></i> Sip slowly</span><span><i class="fa-solid fa-mug-hot"></i> Stay awhile</span><span><i class="fa-solid fa-heart"></i> Made with care</span><span><i class="fa-solid fa-seedling"></i> Better beans</span><span><i class="fa-solid fa-star"></i> Sip slowly</span><span><i class="fa-solid fa-mug-hot"></i> Stay awhile</span><span><i class="fa-solid fa-heart"></i> Made with care</span><span><i class="fa-solid fa-seedling"></i> Better beans</span></div></div>
+
+    <section class="section" id="about"><div class="container about-grid">
+      <div class="about-visual reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85" alt="Barista preparing a freshly brewed coffee"><div class="about-stamp"><strong>Since day one</strong><span>Passion in every pour</span></div></div>
+      <div class="about-copy reveal"><span class="eyebrow">A little about us</span><h2>More than coffee.<br><span class="gold">A feeling.</span></h2><p>We believe the best coffee is about more than what’s in your cup. It’s the pause in a busy day, the conversation with a friend, and the familiar comfort of a place that feels like yours.</p><p>Every drink is made to order with carefully selected beans, balanced flavors, and a little extra care from our baristas.</p>
+        <div class="feature-list"><div class="feature"><i class="fa-solid fa-seedling"></i><div><strong>Thoughtful beans</strong><small>Selected for flavor and freshness</small></div></div><div class="feature"><i class="fa-solid fa-mug-hot"></i><div><strong>Crafted by hand</strong><small>Made fresh for every guest</small></div></div><div class="feature"><i class="fa-solid fa-heart"></i><div><strong>Made with care</strong><small>Good coffee, warm welcome</small></div></div><div class="feature"><i class="fa-solid fa-cookie-bite"></i><div><strong>Fresh pairings</strong><small>Little treats for your coffee break</small></div></div></div>
+        <a href="#contact" class="btn">Come Say Hello <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div></section>
+
+    <section class="section menu-section" id="menu"><div class="container">
+      <div class="section-heading reveal"><span class="eyebrow">The good stuff</span><h2>Made for your <span>moment.</span></h2><p>From your first morning espresso to a slow afternoon latte, find your new favorite in our little collection.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card reveal"><div class="menu-image"><img loading="lazy" src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=900&q=85" alt="Fresh espresso in a ceramic cup"><span class="menu-tag">Barista favorite</span></div><div class="menu-info"><div class="menu-title"><h3>Classic Espresso</h3><span class="price">₹120</span></div><p>Rich, smooth, and beautifully balanced with a golden crema.</p><div class="menu-bottom"><span class="rating"><i class="fa-solid fa-star"></i> 4.9 · Customer favorite</span><button class="add-btn" data-item="Classic Espresso" aria-label="Add Classic Espresso"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="menu-card reveal"><div class="menu-image"><img loading="lazy" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85" alt="Creamy latte in a glass cup"><span class="menu-tag">Smooth & creamy</span></div><div class="menu-info"><div class="menu-title"><h3>Velvet Latte</h3><span class="price">₹180</span></div><p>Silky steamed milk, rich espresso, and a delicate finish.</p><div class="menu-bottom"><span class="rating"><i class="fa-solid fa-star"></i> 4.8 · A cozy classic</span><button class="add-btn" data-item="Velvet Latte" aria-label="Add Velvet Latte"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="menu-card reveal"><div class="menu-image"><img loading="lazy" src="https://images.unsplash.com/photo-1461988625982-7e46a099bf4f?auto=format&fit=crop&w=900&q=85" alt="Iced coffee served over ice"><span class="menu-tag">Chilled favorite</span></div><div class="menu-info"><div class="menu-title"><h3>Brown Sugar Cold Brew</h3><span class="price">₹200</span></div><p>Slow-steeped coffee, mellow sweetness, and a refreshing finish.</p><div class="menu-bottom"><span class="rating"><i class="fa-solid fa-star"></i> 4.9 · Refreshing</span><button class="add-btn" data-item="Brown Sugar Cold Brew" aria-label="Add Brown Sugar Cold Brew"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="menu-card reveal"><div class="menu-image"><img loading="lazy" src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=900&q=85" alt="Cappuccino with latte art"><span class="menu-tag">Classic</span></div><div class="menu-info"><div class="menu-title"><h3>Golden Cappuccino</h3><span class="price">₹160</span></div><p>A bold espresso topped with cloud-soft milk foam.</p><div class="menu-bottom"><span class="rating"><i class="fa-solid fa-star"></i> 4.8 · Comfort in a cup</span><button class="add-btn" data-item="Golden Cappuccino" aria-label="Add Golden Cappuccino"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="menu-card reveal"><div class="menu-image"><img loading="lazy" src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=900&q=85" alt="Mocha coffee topped with cocoa"><span class="menu-tag">Chocolate notes</span></div><div class="menu-info"><div class="menu-title"><h3>Midnight Mocha</h3><span class="price">₹210</span></div><p>Espresso meets chocolate for a rich, indulgent little treat.</p><div class="menu-bottom"><span class="rating"><i class="fa-solid fa-star"></i> 4.9 · Sweet escape</span><button class="add-btn" data-item="Midnight Mocha" aria-label="Add Midnight Mocha"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="menu-card reveal"><div class="menu-image"><img loading="lazy" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85" alt="Fresh bakery pastries"><span class="menu-tag">Freshly baked</span></div><div class="menu-info"><div class="menu-title"><h3>Butter Croissant</h3><span class="price">₹140</span></div><p>Flaky, buttery layers that pair perfectly with your favorite brew.</p><div class="menu-bottom"><span class="rating"><i class="fa-solid fa-star"></i> 4.7 · Bakery pick</span><button class="add-btn" data-item="Butter Croissant" aria-label="Add Butter Croissant"><i class="fa-solid fa-plus"></i></button></div></div></article>
+      </div><p class="menu-note">Menu and prices are sample content. Update them to match your actual café offerings.</p>
+    </div></section>
+
+    <section class="story-banner"><div class="container"><div class="story-inner reveal"><div><span class="eyebrow">Your new happy place</span><h2>Take a breath.<br>Take a coffee break.</h2><p>Drop by for a quick pick-me-up or stay for the slow moments. There’s always room for one more cup.</p><a class="btn" href="#contact">Plan Your Visit <i class="fa-solid fa-arrow-right"></i></a></div></div></div></section>
+
+    <section class="section" id="products"><div class="container">
+      <div class="section-heading reveal"><span class="eyebrow">Bring the ritual home</span><h2>Our coffee <span>goods.</span></h2><p>A few everyday essentials for making your at-home coffee moments feel a little more special.</p></div>
+      <div class="products-grid">
+        <article class="product-card reveal"><div class="product-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=900&q=85" alt="Coffee beans ready for brewing"><span class="product-label">Small batch</span></div><div class="product-info"><h3>House Blend Beans</h3><p>Balanced, chocolatey notes with a smooth finish.</p><div class="product-footer"><strong>₹499 <small style="font-size:.72rem;color:var(--muted);font-weight:400">/ 250 g</small></strong><button class="add-btn" data-item="House Blend Beans" aria-label="Add House Blend Beans"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="product-card reveal"><div class="product-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=85" alt="Ceramic coffee mug"><span class="product-label">Everyday essential</span></div><div class="product-info"><h3>Signature Ceramic Mug</h3><p>Your favorite cup for slow mornings and long chats.</p><div class="product-footer"><strong>₹349</strong><button class="add-btn" data-item="Signature Ceramic Mug" aria-label="Add Signature Ceramic Mug"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="product-card reveal"><div class="product-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=900&q=85" alt="Pour-over coffee brewing equipment"><span class="product-label">Brew at home</span></div><div class="product-info"><h3>Pour-Over Starter Kit</h3><p>A simple setup for a mindful, flavorful coffee ritual.</p><div class="product-footer"><strong>₹899</strong><button class="add-btn" data-item="Pour-Over Starter Kit" aria-label="Add Pour-Over Starter Kit"><i class="fa-solid fa-plus"></i></button></div></div></article>
+      </div><p class="menu-note">Product buttons are demo interactions; connect a cart or checkout service for real orders.</p>
+    </div></section>
+
+    <section class="section reviews"><div class="container"><div class="section-heading reveal"><span class="eyebrow">Kind words, warm cups</span><h2>A little love from <span>our guests.</span></h2><p>Good coffee is even better when it brings people together.</p></div><div class="review-grid">
+      <article class="review-card reveal"><div class="review-stars">★★★★★</div><blockquote>“The latte is beautifully balanced, and the atmosphere makes it so easy to slow down for a while.”</blockquote><div class="reviewer"><div class="avatar">AM</div><div><strong>Alex M.</strong><small>Regular coffee drinker</small></div></div></article>
+      <article class="review-card reveal"><div class="review-stars">★★★★★</div><blockquote>“A lovely spot for a coffee break. The staff are welcoming and the cold brew is a must-try.”</blockquote><div class="reviewer"><div class="avatar">SR</div><div><strong>Sam R.</strong><small>Weekend visitor</small></div></div></article>
+      <article class="review-card reveal"><div class="review-stars">★★★★★</div><blockquote>“Great coffee, fresh pastries, and just the right cozy vibe. I keep finding reasons to come back.”</blockquote><div class="reviewer"><div class="avatar">JD</div><div><strong>Jamie D.</strong><small>Neighborhood guest</small></div></div></article>
+    </div></div></section>
+
+    <section class="section" id="contact"><div class="container contact-grid">
+      <div class="contact-copy reveal"><span class="eyebrow">Let's connect</span><h2>There's always<br><span class="gold">time for coffee.</span></h2><p>Questions, café visits, or a little coffee talk? Send us a message. We'd love to hear from you.</p>
+        <div class="contact-detail"><span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span><div><strong>Find our café</strong><small>Add your café address here</small></div></div>
+        <div class="contact-detail"><span class="contact-icon"><i class="fa-regular fa-clock"></i></span><div><strong>Opening hours</strong><small>Every day · 7:00 AM – 9:00 PM</small></div></div>
+        <div class="contact-detail"><span class="contact-icon"><i class="fa-regular fa-envelope"></i></span><div><strong>Say hello</strong><small>hello@yourcoffeebar.com</small></div></div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <h3>Drop us a note</h3><p>Fill in the details and we’ll be in touch.</p>
+        <div class="form-row"><div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Karthik Kumar" autocomplete="name" required></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div></div>
+        <div class="form-row"><div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" placeholder="+91 00000 00000" autocomplete="tel"></div><div class="field"><label for="subject">I'm interested in</label><select id="subject" name="subject"><option>General enquiry</option><option>Menu and pricing</option><option>Bulk coffee order</option><option>Feedback</option></select></div></div>
+        <div class="field"><label for="message">Your message</label><textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea></div>
+        <button class="btn" type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button><p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div></section>
+  </main>
+
+  <footer><div class="container"><div class="footer-top">
+    <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark"><i class="fa-solid fa-mug-hot"></i></span><span class="brand-name">EMBER & OAK<small>COFFEE BAR</small></span></a><p>Thoughtfully brewed coffee, warm welcomes, and little moments worth savoring.</p><div class="socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div>
+    <div class="footer-col"><h4>Explore</h4><ul><li><a href="#about">Our Story</a></li><li><a href="#menu">Coffee Menu</a></li><li><a href="#products">Coffee Goods</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+    <div class="footer-col"><h4>Visit</h4><ul><li>Add your address</li><li>Daily: 7 AM – 9 PM</li><li>Walk-ins welcome</li></ul></div>
+    <div class="footer-col"><h4>Get in touch</h4><ul><li><a href="mailto:hello@yourcoffeebar.com">hello@yourcoffeebar.com</a></li><li><a href="tel:+910000000000">+91 00000 00000</a></li><li>Made for coffee people ☕</li></ul></div>
+  </div><div class="copyright"><span>© <span id="year"></span> Ember & Oak Coffee Bar. All rights reserved.</span><span>Good coffee. Good company. Good days.</span></div></div></footer>
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="index.js"> </script>
 </body>
 </html>
-
-
