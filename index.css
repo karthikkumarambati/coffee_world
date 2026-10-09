@@ -1,735 +1,128 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    list-style: none;
-}
-.Home{
-    background-color: black;
-    width: 100%;
-    height: 600vh;
-}
-.img2{
-    margin-top: -240px;
-    mix-blend-mode: screen;
-}
-.img1{
-    padding-top: 10px;
-    padding-left: 10px;
-}
-#droping{
-    position: fixed;
-    margin-left: 80vh;
-    float: right;
-    margin-top: -10vh;
-    margin-right: 140px;
-}
-#droping ul li{
-    display: inline;
-    padding-right: 30px;
-    
-}
-#droping ul li a{
-    font-size: 15px;
-    color: aliceblue;
-    transition: .5s linear;
-}
-#droping ul li a:hover{
-    color: rgba(236, 177, 14, 0.801);
-}
- .btn1{
-    font-size: 25px;
-    color: rgba(80, 82, 83, 0.685);
-    background-color: bisque;
-    opacity: 0.7;
-    float: left;
-    margin-left: 100px;
-    width: 40px;
-    height: 30px;
-    margin-top: -120vh;
-}
-#btn2{
-    float: left;
-    margin-top: -120vh;
-    margin-left: -10px;
-    background-color: rgb(87, 84, 84);
-    border: 1px solid rgb(160, 158, 156);
-    height: 30px;
-    font-size: 20px;
-    color: rgba(204, 182, 155, 0.959);
-    text-align: center;
-    opacity: 0.6;
-    mix-blend-mode: screen;
-}
-.btn1:hover{
-    color: rgb(205, 236, 30) ;
-}
-.cart {
-    margin-top: -180px;
-    float: right;
-    margin-right: 60px;
-    font-size: 35px;
-    color: rgb(228, 164, 86);
-    cursor: pointer;
-    mix-blend-mode: screen;
-}
-.cart :hover{
-    color: rgb(238, 241, 9);
-}
-.care{
-    float: right;
-    font-size: 35px;
-    margin-right: 20px;
-    margin-top: -270px;
-    cursor: pointer;
-    color: bisque;
-    display: none;
-    mix-blend-mode: screen;
-}
-#check{
-    display: none;
-} 
-.text{
-    margin-top: -95vh;
-    margin-left: 50px;
-}
-.text h2{
-    color: aliceblue;
-    font-size: 50px;
-    font-style: italic;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#txt{
-    margin-left: 180px;
-    margin-top: 30px;
-}
-.text h5{
-    color: aliceblue;
-    font-size: 20px;
-    opacity: 0.4;
-    margin-top: 15px;
-    margin-left: 50px;
-}
-.text button{
-    background-color: rgb(228, 164, 86);
-    color: aliceblue;
-    width: 150px;
-    height: 40px;
-    margin-top: 30px;
-    margin-left: 60px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.5s linear;
-    mix-blend-mode: screen;
-}
-.text button:hover{
-    width: 180px;
-    font-size: 20px;
-    letter-spacing: 5px;
-}
-#about{
-    margin-top: 30vh;
-}
-.About{
-    padding-top: 20vh;
-    padding-left: 90vh;
-}
-.About h2{
-    color: antiquewhite;
-    font-size: 40px;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.About h2 span{
-    margin-left: 10px;
-    color: rgba(212, 183, 19, 0.918);
-}
-.about_us{
-    margin-top: 20px;
-    border: 1px solid whitesmoke;
-    width: 150vh;
-    height: 63vh;
-    background-color: transparent;
-    margin-left: 30vh;
-}
-.about_us img{
-    margin-top: 5px;
-    margin-left: 5px;
-}
- .txt1{
-     margin-left: 82vh;
-     margin-top: -340px;
- }
- .txt1 h3{
-     font-size: 35px;
-     font-style: italic;
-     font-family: 'Times New Roman', Times, serif;
-     font-weight: bold;
- }
- .txt1 h4{
-     font-size: 15px;
-     padding-top: 10px;
-     line-height: 30px;
- }
- .btn2{
-     background-color: rgb(223, 175, 19);
-     color: black;
-     height: 40px;
-     width: 120px;
-     font-size: 15px;
-     margin-top: -11px;
- }
- .btn2:hover{
-     background-image: linear-gradient(to right,rgb(223, 236, 39),rgb(77, 210, 243),rgb(250, 48, 250));
-     width: 360px;
-     transition: 2s linear;
- }
- #Menu{
-    margin-top: 10vh;
-}
- .menu_bars{
-    padding-left: 90vh;
-    padding-top: 10vh;
-}
-.menu_bars h2{
-    color: antiquewhite;
-    font-size: 40px;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.menu_bars h2 span{
-    margin-left: 10px;
-    color: rgba(212, 183, 19, 0.918);
-}
-.Menu_Bars1{
-    border: 4px solid whitesmoke;
-    width: 54vh;
-    height: 54vh;
-    margin-top: 20px;
-    margin-left: 20vh;
-}
-.Menu_Bars2{
-    border: 4px solid whitesmoke;
-    width: 54vh;
-    height: 54vh;
-    margin-top: -30vh;
-    margin-left: 80vh;
-    margin-bottom: 30px;
-}
-.Menu_Bars3{
-    border: 4px solid whitesmoke;
-    width: 54vh;
-    height: 54vh;
-    margin-top: -76vh;
-    margin-left: 140vh;
-}
-.hover_menu1:hover{
-     width: 340px;
-     height: 460px;
-     margin-left: -100px;
-     justify-content: center;
-     cursor: pointer;
-     transition: 2s linear;
-     margin-top: -10vh;
-     box-shadow: 1px 1px 30px rgb(233, 227, 227), 0 0 35px rgb(172, 172, 238), 0 0 40px rgb(236, 193, 236);
-}
-.hover_menu2:hover{
-    width: 340px;
-    height: 460px;
-    margin-left: -100px;
-    justify-content: center;
-    cursor: pointer;
-    transition: 2s linear;
-    margin-top: -30vh;
-    box-shadow: 1px 1px 30px rgb(233, 227, 227), 0 0 35px rgb(172, 172, 238), 0 0 40px rgb(236, 193, 236);
-}
-.hover_menu3:hover{
-    width: 340px;
-    height: 460px;
-    margin-left: -100px;
-    justify-content: center;
-    cursor: pointer;
-    transition: 2s linear;
-    margin-top: -12vh;
-    box-shadow: 1px 1px 30px rgb(233, 227, 227), 0 0 35px rgb(172, 172, 238), 0 0 40px rgb(236, 193, 236);
+    .hero-meta {
+        gap: 15px;
+        margin-top: 32px;
+    }
+
+    .hero-meta strong {
+        font-size: 1.15rem;
+    }
+
+    /* Shared section spacing */
+    .section {
+        padding: 78px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 34px;
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-visual {
+        max-width: 500px;
+        padding: 0 20px 20px 0;
+    }
+
+    .about-visual img {
+        height: 390px;
+    }
+
+    .about-copy h2 {
+        font-size: 2.65rem;
+    }
+
+    .feature-list {
+        gap: 14px;
+    }
+
+    /* Menu, products, and reviews become single-column layouts. */
+    .menu-grid,
+    .products-grid,
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-image {
+        height: 270px;
+    }
+
+    .product-photo {
+        height: 290px;
+    }
+
+    /* Story banner */
+    .story-banner {
+        padding-bottom: 70px;
+    }
+
+    .story-inner {
+        min-height: 360px;
+        padding: 35px 25px;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* Footer */
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 
-#products{
-    margin-top: 18vh;
-}
-.products_imgs{
-    padding-left: 90vh;
-    padding-top: 15vh;
-}
-.products_imgs h2{
-    color: antiquewhite;
-    font-size: 40px;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.products_imgs h2 span{
-    margin-left: 10px;
-    color: rgba(212, 183, 19, 0.918);
-}
-.slidings{
-    padding-top: 10vh;
-}
-#contact{
-    margin-top: 20vh;
-}
-.our_contact{
-    padding-left: 90vh;
-    padding-top: 15vh;
-}
-.our_contact h2{
-    color: antiquewhite;
-    font-size: 40px;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    mix-blend-mode: screen;
-}
-.our_contact h2 span{
-    margin-left: 10px;
-    color: rgba(212, 183, 19, 0.918);
-}
-#pr1,#pr2,#pr3{
-    padding-left: 200px;
-    padding-right: 200px;
-}
-#bg1{
-    margin-top: -30vh;
-    margin-left: 30px;
-}
-.form_slot{
-    float: right;
-    margin-top: -75vh;
-    margin-right: 10vh;
-    mix-blend-mode: screen;
-}
-.slot{
-    padding-left: 15vh;
-    color: rgb(212, 183, 19, 0.918);
-    opacity: 0.3;
-}
-#in_1{
-    width: 60vh;
-    height: 6vh;
-    background-color: rgb(55, 61, 61);
-    text-align: center;
-    color: aliceblue;
-}
-#in_2{
-    width: 60vh;
-    height: 6vh;
-    background-color: rgb(55, 61, 61);
-    text-align: center;
-    color: aliceblue;
-}
-#in_3{
-    width: 60vh;
-    height: 6vh;
-    background-color: rgb(55, 61, 61);
-    text-align: center;
-    color: aliceblue;
-}
-.ion1,.ion2,.ion3{
-    margin-top: -35px;
-    margin-left: 10px;
-    font-size: 25px;
-    color: antiquewhite;
-}
-#in_4{
-    width: 60vh;
-    font-size: 20px;
-    letter-spacing: 5px;
-    height: 6vh;
-    background-color: rgb(55, 61, 61);
-    text-align: center;
-    color: aliceblue;
-    transition: 0.5s linear;
-}
-#in_4:hover{
-    background-color: bisque;
-    color: black;
-}
-#nav ul{
-    margin-top: 20px;
-}
-#nav ul li{
-    padding-right: 30px;
-    display: inline;
-}
-#nav ul li a{
-    color: antiquewhite;
-    font-size: 30px;
-    transition: 0.2s linear;
-}
-#nav ul li a:hover{
-    color: rgba(212, 183, 19, 0.918);
-}
-/*#rn_1{
-    color: antiquewhite;
-    font-size: 30px;
-    margin-top: 60px;
-    margin-left: 20px;
-}*/
-@media screen and (max-width: 570px){
-    .Home{
-        background-color: black;
-        width: fit-content;
-        height: 460vh;
+/* =========================================================
+   18. EXTRA-SMALL MOBILE SCREENS
+   Screens 380px wide and below
+   ========================================================= */
+
+@media (max-width: 380px) {
+    .hero-actions .btn {
+        width: 100%;
     }
-    .img2{
-        margin-top: -70px;
-        mix-blend-mode: screen;
+
+    .hero-meta {
+        gap: 10px;
+        font-size: 0.72rem;
     }
-    .img1{
-        padding-top: 10px;
-        padding-left: 10px;
+
+    .hero-meta .divider {
+        height: 28px;
     }
-     .btn1{
-        font-size: 15px;
-        color: rgba(80, 82, 83, 0.685);
-        background-color: bisque;
-        opacity: 0.7;
-        float: left;
-        width: 20px;
-        height: 15px;
-        margin-top: -150vh;
+
+    .feature-list {
+        grid-template-columns: 1fr;
     }
-    #btn2{
-        float: left;
-        margin-top: -238px;
-        margin-left: 10px;
-        background-color: transparent;
-        border: 1px solid transparent;
-        height: 25px;
-        width: 150px;
-        font-size: 20px;
-        color: bisque;
-        text-align: center;
-        caret-color: aqua;
-        opacity: 0.6;
+
+    .footer-top {
+        grid-template-columns: 1fr;
     }
-    .btn1{
-        margin-top: -38vh;
-        margin-left: 15vh;
-        font-size: 30px;
-        background-color: transparent;
-        mix-blend-mode: screen;
+
+    .footer-brand {
+        grid-column: auto;
     }
-    .cart {
-        margin-top: -95px;
-        float: right;
-        margin-right: 75px;
-        font-size: 25px;
-        color: rgb(228, 164, 86);
-        cursor: pointer;
-        mix-blend-mode: screen;
-    }
-    .cart :hover{
-        color: rgba(219, 186, 39, 0.767);
-    }
-    .text h2{
-        color: aliceblue;
-        font-size: 20px;
-        font-style: italic;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: -26vh;
-        margin-left: 50px;
-    }
-    #txt{
-        margin-left: 180px;
-        margin-top: 30px;
-    }
-    .text h5{
-        color: aliceblue;
-        font-size: 10px;
-        opacity: 0.4;
-        margin-top: 15px;
-        margin-left: 50px;
-    }
-    .text button{
-        background-color: rgb(228, 164, 86);
-        color: aliceblue;
-        width: 80px;
-        height: 20px;
-        margin-top: 10px;
-        margin-left: 60px;
-        font-size: 10px;
-        cursor: pointer;
-        transition: 0.5s linear;
-        mix-blend-mode: screen;
-    }
-    .text button:hover{
-        width: 150px;
-        font-size: 15px;
-        letter-spacing: 5px;
-    }
-    #about{
-        margin-top: 5vh;
-    }
-    .About{
-        padding-top: 0;
-        padding-left: 25vh;
-    }
-    .About h2{
-        color: antiquewhite;
-        font-size: 30px;
-        font-style: italic;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .About h2 span{
-        margin-left: 10px;
-        color: rgba(212, 183, 19, 0.918);
-    }
-    .about_us{
-        margin-top: 20px;
-        border: 1px solid whitesmoke;
-        width: 68vh;
-        height: 30vh;
-        background-color: antiquewhite;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .about_us img{
-        margin-top: 15px;
-        margin-left: 5px;
-        width: 150px;
-        height: 150px;
-    }
-     .txt1{
-         margin-left: 5vh;
-         margin-top: -150px;
-     }
-     .txt1 h3{
-         font-size: 15px;
-         font-style: italic;
-         font-family: 'Times New Roman', Times, serif;
-         font-weight: bold;
-         float: right;
-         margin-right: 20px;
-     }
-     .txt1 h4{
-         margin-top: -2vh;
-         font-size: 10px;
-         float: right;
-         padding-left: 20vh;
-         line-height: 120%;
-     }
-     .btn2{
-         background-color: rgb(223, 175, 19);
-         color: black;
-         height: 20px;
-         width: 100px;
-         font-size: 10px;
-         float: right;
-         margin-right: 40px;
-         margin-top: -3px;
-     }
-     #Menu{
-        margin-top: -10vh;
-    }
-     .menu_bars{
-        padding-left: 20vh;
-        padding-top: 20vh;
-    }
-    .menu_bars h2{
-        color: antiquewhite;
-        font-size: 30px;
-        font-style: italic;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .menu_bars h2 span{
-        margin-left: 10px;
-        color: rgba(212, 183, 19, 0.918);
-    }
-    .Menu_Bars1{
-        border: 2px solid whitesmoke;
-        width: 51vh;
-        height: 50vh;
-        margin-top: 50px;
-        margin-left: 10vh;
-    }
-    .Menu_Bars2{
-        border: 2px solid whitesmoke;
-        width: 51vh;
-        height: 50vh;
-        margin-top: 10vh;
-        margin-left: 10vh;
-    }
-    .Menu_Bars3{
-        border: 2px solid whitesmoke;
-        width: 51vh;
-        height: 50vh;
-        margin-top: 10vh;
-        margin-left: 10vh;
-    }
-    #products{
-        margin-top: 30px;
-    }
-    .products_imgs{
-        padding-left: 150px;
-    }
-    .products_imgs h2{
-        color: antiquewhite;
-        font-size: 30px;
-        font-style: italic;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .products_imgs h2 span{
-        margin-left: 10px;
-        color: rgba(212, 183, 19, 0.918);
-    }
-    .slidings{
-        padding-top: 10vh;
-    }
-    #contact{
-        margin-top: 10vh;
-    }
-    .our_contact{
-        padding-left: 120px;
-        padding-top: 5vh;
-    }
-    .our_contact h2{
-        color: antiquewhite;
-        font-size: 30px;
-        font-style: italic;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        mix-blend-mode: screen;
-    }
-    .our_contact h2 span{
-        margin-left: 10px;
-        color: rgba(212, 183, 19, 0.918);
-    }
-    #pr1,#pr2,#pr3{
-        padding-left: 100px;
-        padding-right: 100px;
-        width: 300px;
-        height: 200px;
-    }
-    #bg1{
-        margin-top: 10vh;
-        width: 400px;
-        height: 400px;
-    }
-    .form_slot{
-        float: left;
-        margin-top: -62vh;
-        margin-left: 33vh;
-        mix-blend-mode: screen;
-    }
-    .slot{
-        margin-left: -100px;
-        margin-right: 10px;
-        color: rgb(212, 183, 19, 0.918);
-        opacity: 0.3;
-    }
-    #in_1{
-        width: 30vh;
-        height: 6vh;
-        background-color: rgb(55, 61, 61);
-        font-size: 12px;
-        text-align: 10px right;
-        color: aliceblue;
-    }
-    #in_2{
-        width: 30vh;
-        height: 6vh;
-        font-size: 12px;
-        background-color: rgb(55, 61, 61);
-        text-align: 10px right;
-        color: aliceblue;
-    }
-    #in_3{
-        width: 30vh;
-        height: 6vh;
-        font-size: 12px;
-        background-color: rgb(55, 61, 61);
-        text-align: right;
-        color: aliceblue;
-    }
-    .ion1,.ion2,.ion3{
-        font-size: 20px;
-    }
-    #in_4{
-        width: 30vh;
-        font-size: 20px;
-        letter-spacing: 5px;
-        height: 6vh;
-        background-color: rgb(55, 61, 61);
-        text-align: center;
-        color: aliceblue;
-        transition: 0.5s linear;
-    }
-    #in_4:hover{
-        background-color: bisque;
-        color: black;
-    }
-    #nav ul{
-        margin-top: 20px;
-    }
-    #nav ul li{
-        padding-right: 5px;
-    }
-    #nav ul li a{
-        color: antiquewhite;
-        font-size: 20px;
-        transition: 0.2s linear;
-    }
-    #nav ul li a:hover{
-        color: rgba(212, 183, 19, 0.918);
-    }
-    #rn_1{
-        color: antiquewhite;
-        font-size: 40px;
-        margin-top: 60px;
-        margin-left: 20px;
-    }
-    #tel{
-        display: none;
-    }
-    .care{
-        display: block;
-        font-size: 30px;
-        margin-left: 67vh;
-        margin-top: -100px;
-        cursor: pointer;
-        color: bisque;
-        position: fixed;
-        mix-blend-mode: screen;
-    }
-    #droping {
-        position: fixed;
-        margin-left: 60vh;
-        top: 16vh;
-        display: none;
-        background-image: linear-gradient(to top, rgba(44, 42, 42, 0.712),rgba(100, 77, 81, 0.822));
-        transition: 0.8s;
-        width: 100px;
-        border-bottom: none;
-        height: 140px;
-        cursor: pointer;
-    }
-    #droping ul{
-        margin-right: 15px;
-        margin-top: 10px;
-    }
-    #droping ul li a{
-        font-size: 12px;
-        color: rgba(99, 104, 39, 0.945);
-        text-align: center;
-        opacity: 0.5;
-    }
-    #droping ul li a:hover{
-        color: rgba(230, 231, 225, 0.473);
-        font-size: 20px;
-        background-color: rgba(49, 47, 47, 0.61);
-    }
-}
