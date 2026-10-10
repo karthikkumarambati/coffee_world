@@ -1,94 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee World</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17110d">
+  <meta name="description" content="Discover freshly brewed coffee, rich espresso, and carefully selected coffee beans at Coffee World.">
+  <title>Coffee World | Crafted for Coffee Lovers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="logo.png" alt="Coffee World Logo">
-        </a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#menu">Menu</a>
-            <a href="#products">Products</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="icons">
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-    </header>
+  <div class="announcement"><span>Freshly roasted. Thoughtfully brewed.</span><span class="announcement-dot">✦</span><span>Your daily ritual starts here</span></div>
+  <header class="header" id="siteHeader">
+    <a href="#home" class="logo" aria-label="Coffee World home"><img src="logo.png" alt="Coffee World"><span>coffee<span class="logo-accent">world</span></span></a>
+    <nav class="navbar" id="navLinks" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#story">Our story</a><a class="nav-link" href="#menu">Menu</a><a class="nav-link" href="#products">Coffee beans</a><a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="search-btn" aria-label="Show search" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn cart-trigger" id="cart-btn" aria-label="View cart" title="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></button>
+      <button class="icon-btn menu-trigger" id="menu-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <form class="search-panel" id="searchPanel" role="search"><label class="sr-only" for="siteSearch">Search coffee</label><input id="siteSearch" type="search" placeholder="Search coffee, beans, menu…" autocomplete="off"><button type="submit" aria-label="Search"><i class="fa-solid fa-arrow-right"></i></button></form>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="home" id="home">
-        <div class="content animate-fade-in">
-            <h3>Start your day with a black coffee</h3>
-            <p>Experience the rich, bold flavors of our freshly roasted beans, crafted to perfection to awaken your senses.</p>
-            <a href="#menu" class="btn">Get Yours Now</a>
-        </div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div><div class="hero-grain"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR MOMENT. YOUR COFFEE.</p>
+        <h1>Good days<br>start with <em>great coffee.</em></h1>
+        <p class="hero-copy">From the first comforting aroma to the final sip, discover coffee made to slow you down and bring your day to life.</p>
+        <div class="hero-actions"><a href="#menu" class="btn btn-primary">Explore our menu <i class="fa-solid fa-arrow-right"></i></a><a href="#story" class="text-link">Our story <span>↗</span></a></div>
+        <div class="hero-note"><span class="note-icon"><i class="fa-solid fa-mug-hot"></i></span><span><strong>Made fresh, every day</strong><small>Small moments. Exceptional coffee.</small></span></div>
+      </div>
+      <div class="hero-side-note">SIP SLOWLY · LIVE FULLY</div>
+      <a href="#story" class="scroll-cue"><span></span> SCROLL TO DISCOVER</a>
     </section>
 
-    <!-- Menu Section -->
-    <section class="menu" id="menu">
-        <h1 class="heading">Our <span>Menu</span></h1>
-        <div class="box-container">
-            <div class="box animate-slide-up">
-                <img src="menu1.jpg" alt="Menu Item 1">
-                <h3>Espresso</h3>
-                <div class="price">$3.99 <span>$4.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-            <div class="box animate-slide-up" style="animation-delay: 0.2s;">
-                <img src="menu2.jpg" alt="Menu Item 2">
-                <h3>Latte Macchiato</h3>
-                <div class="price">$4.99 <span>$5.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-            <div class="box animate-slide-up" style="animation-delay: 0.4s;">
-                <img src="menu3.jpg" alt="Menu Item 3">
-                <h3>Cappuccino</h3>
-                <div class="price">$4.50 <span>$5.50</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-        </div>
+    <section class="intro section-wrap reveal" id="story">
+      <div class="intro-label"><span class="tiny-star">✳</span> A LITTLE ABOUT US</div>
+      <div class="intro-copy"><h2>Not just coffee.<br><em>A feeling.</em></h2><p>We believe the best coffee does more than wake you up. It creates a pause in the rush, a reason to gather, and a little everyday magic. Carefully selected beans, a thoughtful roast, and a whole lot of heart in every cup.</p><a href="#products" class="underlined-link">Meet our beans <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      <div class="intro-image"><img src="coffee.jpg" alt="Freshly prepared coffee and coffee beans" loading="lazy"><div class="image-stamp"><span>BREWED</span><strong>with<br>love</strong><span>DAILY · 100%</span></div></div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <h1 class="heading">Our <span>Products</span></h1>
-        <div class="box-container">
-            <div class="box animate-slide-up">
-                <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <div class="image">
-                    <img src="product1.jpg" alt="Product 1">
-                </div>
-                <div class="content">
-                    <h3>Nicaragua Coffee Beans</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                </div>
-            </div>
-            <!-- Add more products using product2.jpg and product3.jpg following the same structure -->
-        </div>
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading reveal"><div><p class="eyebrow dark-eyebrow">FIND YOUR FAVOURITE</p><h2>Our <em>menu</em></h2></div><p>Comfort in a cup, whatever your kind of day.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card reveal"><div class="menu-photo"><img src="menu1.jpg" alt="Rich espresso" loading="lazy"><span class="menu-number">01</span></div><div class="menu-info"><div><h3>Classic Espresso</h3><p>Bold, smooth, beautifully simple.</p></div><span class="price">$3.99</span></div><button class="add-link add-to-cart" data-name="Classic Espresso" data-price="3.99">Add to bag <i class="fa-solid fa-plus"></i></button></article>
+        <article class="menu-card reveal"><div class="menu-photo"><img src="menu2.jpg" alt="Creamy latte macchiato" loading="lazy"><span class="menu-number">02</span><span class="popular-tag">HOUSE FAVOURITE</span></div><div class="menu-info"><div><h3>Latte Macchiato</h3><p>Silky milk, espresso, a soft finish.</p></div><span class="price">$4.99</span></div><button class="add-link add-to-cart" data-name="Latte Macchiato" data-price="4.99">Add to bag <i class="fa-solid fa-plus"></i></button></article>
+        <article class="menu-card reveal"><div class="menu-photo"><img src="menu3.jpg" alt="Fresh cappuccino" loading="lazy"><span class="menu-number">03</span></div><div class="menu-info"><div><h3>Velvet Cappuccino</h3><p>Rich espresso under cloud-soft foam.</p></div><span class="price">$4.50</span></div><button class="add-link add-to-cart" data-name="Velvet Cappuccino" data-price="4.50">Add to bag <i class="fa-solid fa-plus"></i></button></article>
+      </div>
     </section>
 
-    <script src="index.js"></script>
+    <section class="quote-band"><div class="quote-mark">“</div><p>Life is too short for<br><em>bad coffee.</em></p><span>TAKE A MOMENT. MAKE IT YOURS.</span><div class="quote-orbit orbit-one"></div><div class="quote-orbit orbit-two"></div></section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading reveal"><div><p class="eyebrow dark-eyebrow">FROM OUR ROASTERY</p><h2>Beans worth <em>waking up for</em></h2></div><p>Bring your favourite café moment home.</p></div>
+      <div class="product-grid">
+        <article class="product-card reveal"><div class="product-image"><img src="product1.jpg" alt="Nicaragua coffee beans" loading="lazy"><span class="product-label">SMALL BATCH</span><button class="quick-add add-to-cart" data-name="Nicaragua Coffee Beans" data-price="15.99" aria-label="Add Nicaragua Coffee Beans to bag"><i class="fa-solid fa-plus"></i></button></div><div class="product-details"><div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(4.8)</span></div><h3>Nicaragua Coffee Beans</h3><p>Chocolate · Caramel · Citrus</p><div class="product-bottom"><span class="price">$15.99 <del>$20.99</del></span><button class="round-add add-to-cart" data-name="Nicaragua Coffee Beans" data-price="15.99" aria-label="Add to bag"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="product-card reveal"><div class="product-image"><img src="product2.jpg" alt="Signature roasted coffee" loading="lazy"><span class="product-label">BESTSELLER</span><button class="quick-add add-to-cart" data-name="Signature Roast" data-price="17.50" aria-label="Add Signature Roast to bag"><i class="fa-solid fa-plus"></i></button></div><div class="product-details"><div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(5.0)</span></div><h3>Signature Roast</h3><p>Hazelnut · Cocoa · Brown sugar</p><div class="product-bottom"><span class="price">$17.50</span><button class="round-add add-to-cart" data-name="Signature Roast" data-price="17.50" aria-label="Add to bag"><i class="fa-solid fa-plus"></i></button></div></div></article>
+        <article class="product-card reveal"><div class="product-image"><img src="product3.jpg" alt="Premium coffee beans" loading="lazy"><span class="product-label">RICH & BOLD</span><button class="quick-add add-to-cart" data-name="Midnight Blend" data-price="18.99" aria-label="Add Midnight Blend to bag"><i class="fa-solid fa-plus"></i></button></div><div class="product-details"><div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(4.9)</span></div><h3>Midnight Blend</h3><p>Dark chocolate · Toasted walnut</p><div class="product-bottom"><span class="price">$18.99</span><button class="round-add add-to-cart" data-name="Midnight Blend" data-price="18.99" aria-label="Add to bag"><i class="fa-solid fa-plus"></i></button></div></div></article>
+      </div>
+    </section>
+
+    <section class="newsletter reveal" id="contact"><div class="newsletter-icon"><i class="fa-regular fa-envelope"></i></div><div class="newsletter-copy"><p class="eyebrow">A NOTE FROM US</p><h2>A little more <em>coffee in your inbox.</em></h2><p>New roasts, brewing tips, and good things worth waking up for.</p></div><form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="newsletterEmail">Email address</label><input type="email" id="newsletterEmail" placeholder="Your email address" required><button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button><small id="newsletterMessage" aria-live="polite">No spam. Just the good stuff.</small></form></section>
+  </main>
+
+  <footer class="footer"><a href="#home" class="logo footer-logo"><img src="logo.png" alt=""><span>coffee<span class="logo-accent">world</span></span></a><p>Made for slow mornings and good company.</p><div class="social-links"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></div><div class="footer-bottom"><span>© <span id="year"></span> Coffee World. Brewed with care.</span><a href="#home">Back to top ↑</a></div></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="cart-dialog" id="cartDialog"><div class="cart-head"><div><p class="eyebrow dark-eyebrow">YOUR LITTLE COLLECTION</p><h2>Your <em>bag</em></h2></div><button class="icon-btn" id="closeCart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is waiting for something lovely.</p></div><div class="cart-footer"><div><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div><button class="btn btn-primary" id="checkoutBtn">Continue to checkout <i class="fa-solid fa-arrow-right"></i></button><small>Demo cart · Checkout is not connected to payments.</small></div></dialog>
+  <script src="index.js"></script>
 </body>
 </html>
